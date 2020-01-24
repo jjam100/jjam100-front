@@ -5,14 +5,14 @@
   margin: 0 auto;
 
   @media (max-width: $break1) {
-    width: 318px;
+    width: 300px;
   }
 
   @media (min-width: $break1 + 1px) and (max-width: $break2) {
     width: 500px;
   }
 
-  @media (min-width: $break2) {
+  @media (min-width: $break2 + 1px) {
     width: 900px;
   }
 }
