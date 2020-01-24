@@ -9,3 +9,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* FONTS */
+h1,
+h2,
+h3,
+h4,
+h5,
+dt {
+  font-family: $bold, sans-serif;
+}
+
+p,
+li,
+dd,
+td {
+  font-family: $light, sans-serif;
+}
+
+button,
+th,
+a {
+  font-family: $medium, sans-serif;
+}
