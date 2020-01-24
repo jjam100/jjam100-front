@@ -32,3 +32,32 @@ th,
 a {
   font-family: $medium, sans-serif;
 }
+
+/* SPACING */
+.spacing-top {
+  @media (max-width: $break1) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: $break1 + 1px) and (max-width: $break2) {
+    margin-top: 140px;
+  }
+
+  @media (min-width: $break2 + 1px) {
+    margin-top: 190px;
+  }
+}
+
+.spacing-btm {
+  @media (max-width: $break1) {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $break1 + 1px) and (max-width: $break2) {
+    margin-bottom: 140px;
+  }
+
+  @media (min-width: $break2 + 1px) {
+    margin-bottom: 190px;
+  }
+}

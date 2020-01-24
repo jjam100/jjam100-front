@@ -7,8 +7,8 @@ import { Button } from '../components/Button';
 const Index = () => {
 	return (
 		<DefaultLayout>
-			<IndexHeader />
-			<section id="index-intro">
+			<IndexHeader className="spacing-top" />
+			<section id="index-intro" className="spacing-top">
 				<img src="/images/main.png" srcSet="/images/main@2x.png 2x, /images/main@3x.png 3x" />
 				<h2>홍진백</h2>
 				<ul id="index-intro-list">
@@ -32,7 +32,7 @@ const Index = () => {
 				</ul>
 			</section>
 
-			<section id="index-hash-myself">
+			<section id="index-hash-myself" className="spacing-top">
 				<h2>Hash myself</h2>
 				<table>
 					<thead>
@@ -112,7 +112,7 @@ const Index = () => {
 				</table>
 			</section>
 
-			<section id="index-works">
+			<section id="index-works" className="spacing-top">
 				<h2>WORKS</h2>
 				<div className="index-works-item">
 					<img
@@ -175,7 +175,7 @@ const Index = () => {
 				</div>
 			</section>
 
-			<section id="index-contact">
+			<section id="index-contact" className="spacing-top">
 				<h2>Contact</h2>
 				<div id="email-contact">
 					<span>EMAIL을 보내고 싶으시다면?</span>
@@ -191,7 +191,7 @@ const Index = () => {
 				</div>
 			</section>
 
-			<section id="index-private">
+			<section id="index-private" className="spacing-top">
 				<h2>Private</h2>
 				<p>
 					개인적인 페이지 입니다.
