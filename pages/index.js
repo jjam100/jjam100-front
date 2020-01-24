@@ -1,5 +1,6 @@
 import { useState, Fragment } from 'react';
 import Link from 'next/link';
+import './index.scss';
 
 const Index = () => {
 	return (
