@@ -13,7 +13,7 @@ const Index = () => {
 			</header>
 
 			<section id="index-intro">
-				<img src="/images/main.png" srcset="/images/main@2x.png 2x, /images/main@3x.png 3x" />
+				<img src="/images/main.png" srcSet="/images/main@2x.png 2x, /images/main@3x.png 3x" />
 				<h2>홍진백</h2>
 				<ul id="index-intro-list">
 					<li>서울과학기술대학교 컴퓨터공학과</li>
@@ -31,7 +31,7 @@ const Index = () => {
 						<img src="/images/codepen.svg" />
 					</li>
 					<li>
-						<img src="/images/velog.png" srcset="/images/velog@2x.png 2x, /images/velog@3x.png 3x" />
+						<img src="/images/velog.png" srcSet="/images/velog@2x.png 2x, /images/velog@3x.png 3x" />
 					</li>
 				</ul>
 			</section>
@@ -40,8 +40,10 @@ const Index = () => {
 				<h2>Hash myself</h2>
 				<table>
 					<thead>
-						<th>key</th>
-						<th>value</th>
+						<tr>
+							<th>key</th>
+							<th>value</th>
+						</tr>
 					</thead>
 					<tbody>
 						<tr>
@@ -119,7 +121,7 @@ const Index = () => {
 				<div className="index-works-item">
 					<img
 						src="/images/parallel-diary.png"
-						srcset="/images/parallel-diary@2x.png 2x,/images/parallel-diary@3x.png 3x"
+						srcSet="/images/parallel-diary@2x.png 2x,/images/parallel-diary@3x.png 3x"
 					/>
 					<h3>평행일기</h3>
 					<p>
@@ -135,7 +137,7 @@ const Index = () => {
 					<button>바로가기</button>
 				</div>
 				<div className="index-works-item">
-					<img src="/images/member-me.png" srcset="/images/member-me@2x.png 2x,/images/member-me@3x.png 3x" />
+					<img src="/images/member-me.png" srcSet="/images/member-me@2x.png 2x,/images/member-me@3x.png 3x" />
 					<h3>Member Me</h3>
 					<p>
 						1개월 외주 퍼블리싱 <br />
@@ -149,7 +151,7 @@ const Index = () => {
 					<button>바로가기</button>
 				</div>
 				<div className="index-works-item">
-					<img src="/images/pple.png" srcset="/images/pple@2x.png 2x,/images/pple@3x.png 3x" />
+					<img src="/images/pple.png" srcSet="/images/pple@2x.png 2x,/images/pple@3x.png 3x" />
 					<h3>피플(Pple)</h3>
 					<p>
 						학기중 창업동아리 활동 <br />
@@ -162,7 +164,7 @@ const Index = () => {
 					<button>바로가기</button>
 				</div>
 				<div className="index-works-item">
-					<img src="/images/jjam100.png" srcset="/images/jjam100@2x.png 2x,/images/jjam100@3x.png 3x" />
+					<img src="/images/jjam100.png" srcSet="/images/jjam100@2x.png 2x,/images/jjam100@3x.png 3x" />
 					<h3>JJAM100</h3>
 					<p>
 						개인 포트폴리오 및 <br />
@@ -181,15 +183,11 @@ const Index = () => {
 				<h2>Contact</h2>
 				<div id="email-contact">
 					<span>EMAIL을 보내고 싶으시다면?</span>
-					<Link href="mailto:hjjam100@gmail.com">
-						<a>EMAIL</a>
-					</Link>
+					<a href="mailto:hjjam100@gmail.com">EMAIL</a>
 				</div>
 				<div id="call-contact">
 					<span>전화번호가 필요하시다면?</span>
-					<Link href="tel:+821034069654">
-						<a>CALL</a>
-					</Link>
+					<a href="tel:+821034069654">CALL</a>
 				</div>
 				<div id="call-contact">
 					<span>명함이 필요하시다면?</span>
