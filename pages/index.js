@@ -1,18 +1,13 @@
-import { useState, Fragment } from 'react';
 import Link from 'next/link';
 import './index.scss';
+import { DefaultLayout } from '../components/Layouts';
+import { IndexHeader } from '../components/Header';
+import { Button } from '../components/Button';
 
 const Index = () => {
 	return (
-		<Fragment>
-			<header id="index-header">
-				<h1>JJAM100</h1>
-				<p>Introduction & Private place</p>
-				<Link href="/private">
-					<button>PRIVATE</button>
-				</Link>
-			</header>
-
+		<DefaultLayout>
+			<IndexHeader />
 			<section id="index-intro">
 				<img src="/images/main.png" srcSet="/images/main@2x.png 2x, /images/main@3x.png 3x" />
 				<h2>홍진백</h2>
@@ -135,7 +130,7 @@ const Index = () => {
 						<li>같은 학과 학생 한명과 작업</li>
 						<li>Heroku로 배포</li>
 					</ul>
-					<button>바로가기</button>
+					<Button>바로가기</Button>
 				</div>
 				<div className="index-works-item">
 					<img src="/images/member-me.png" srcSet="/images/member-me@2x.png 2x,/images/member-me@3x.png 3x" />
@@ -149,7 +144,7 @@ const Index = () => {
 						<li>반응형 퍼블리싱 작업</li>
 						<li>기여도 70%</li>
 					</ul>
-					<button>바로가기</button>
+					<Button>바로가기</Button>
 				</div>
 				<div className="index-works-item">
 					<img src="/images/pple.png" srcSet="/images/pple@2x.png 2x,/images/pple@3x.png 3x" />
@@ -162,7 +157,7 @@ const Index = () => {
 						<li>EJS & CRUD</li>
 						<li>기여도 40%</li>
 					</ul>
-					<button>바로가기</button>
+					<Button>바로가기</Button>
 				</div>
 				<div className="index-works-item">
 					<img src="/images/jjam100.png" srcSet="/images/jjam100@2x.png 2x,/images/jjam100@3x.png 3x" />
@@ -176,7 +171,7 @@ const Index = () => {
 						<li>Node.js(Express)</li>
 						<li>스스로 디자인하고 개발</li>
 					</ul>
-					<button>바로가기</button>
+					<Button>바로가기</Button>
 				</div>
 			</section>
 
@@ -185,16 +180,15 @@ const Index = () => {
 				<div id="email-contact">
 					<span>EMAIL을 보내고 싶으시다면?</span>
 					<a href="mailto:hjjam100@gmail.com">EMAIL</a>
+					<Button href="mailto:hjjam100@gmail.com">EMAIL</Button>
 				</div>
 				<div id="call-contact">
 					<span>전화번호가 필요하시다면?</span>
-					<a href="tel:+821034069654">CALL</a>
+					<Button href="tel:+821034069654">CALL</Button>
 				</div>
 				<div id="call-contact">
 					<span>명함이 필요하시다면?</span>
-					<Link href="#">
-						<a>명함</a>
-					</Link>
+					<Button link="#">명함</Button>
 				</div>
 			</section>
 
@@ -210,7 +204,7 @@ const Index = () => {
 					<a>들어가기</a>
 				</Link>
 			</section>
-		</Fragment>
+		</DefaultLayout>
 	);
 };
 
