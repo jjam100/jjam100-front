@@ -1,3 +1,4 @@
+import './style/IndexHeader.scss';
 import { Button } from '../Button';
 
 const IndexHeader = props => (
