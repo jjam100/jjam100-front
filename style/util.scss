@@ -1,0 +1,11 @@
+@import './variables.scss';
+@import './normalize.scss';
+
+$bold: "NIXGONB";
+$medium: "NIXGONM";
+$light: "NIXGONL";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
