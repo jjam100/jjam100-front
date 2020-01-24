@@ -179,7 +179,6 @@ const Index = () => {
 				<h2>Contact</h2>
 				<div id="email-contact">
 					<span>EMAIL을 보내고 싶으시다면?</span>
-					<a href="mailto:hjjam100@gmail.com">EMAIL</a>
 					<Button href="mailto:hjjam100@gmail.com">EMAIL</Button>
 				</div>
 				<div id="call-contact">
