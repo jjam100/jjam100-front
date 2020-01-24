@@ -11,8 +11,6 @@ const Button = props => {
 		children: props.children,
 	};
 
-	console.log(att);
-
 	const def = (
 		<button id={att.id} className={att.className} onClick={att.onClick}>
 			{att.children}
