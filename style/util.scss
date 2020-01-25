@@ -20,7 +20,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 body {
@@ -58,6 +58,7 @@ dd,
 td,
 span {
   font-family: $light, sans-serif;
+  letter-spacing: -0.45px;
 
   @media (max-width: $break1) {
     font-size: 1.2rem;

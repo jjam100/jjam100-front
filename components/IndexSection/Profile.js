@@ -12,16 +12,24 @@ const Profile = props => (
 			</ul>
 			<ul id="index-intro-links">
 				<li>
-					<img src="/images/github.svg" />
+					<a href="https://github.com/jjam100" target="_blank">
+						<img src="/images/github.svg" />
+					</a>
 				</li>
 				<li>
-					<img src="/images/facebook.svg" />
+					<a href="https://www.facebook.com/ihnmimp" target="_blank">
+						<img src="/images/facebook.svg" />
+					</a>
 				</li>
 				<li>
-					<img src="/images/codepen.svg" />
+					<a href="https://codepen.io/ambiva" target="_blank">
+						<img src="/images/codepen.svg" />
+					</a>
 				</li>
 				<li>
-					<img src="/images/velog.png" srcSet="/images/velog@2x.png 2x, /images/velog@3x.png 3x" />
+					<a href="https://velog.io/@h_jjam100" target="_blank">
+						<img src="/images/velog.png" srcSet="/images/velog@2x.png 2x, /images/velog@3x.png 3x" />
+					</a>
 				</li>
 			</ul>
 		</div>

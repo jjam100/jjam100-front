@@ -4,22 +4,12 @@
 
   @media (max-width: $break1) {
     width: 100%;
-
-    & ul#index-intro-links {
-      float: right;
-      margin: 10px 0px 0px 0px;
-    }
   }
 
   @media (min-width: $break1 + 1px) and (max-width: $break2) {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-    & ul#index-intro-links {
-      float: right;
-      margin: 20px 0px 0px 0px;
-    }
   }
 
   @media (min-width: $break2 + 1px) {
@@ -54,9 +44,22 @@
   ul#index-intro-links {
     list-style-type: none;
     padding: 0px;
+    margin: 0px;
 
     display: inline-flex;
     flex-direction: row;
+
+    @media (max-width: $break1) {
+      float: right;
+    }
+
+    @media (min-width: $break1 + 1px) and (max-width: $break2) {
+      float: left;
+    }
+
+    @media (min-width: $break2 + 1px) {
+      float: right;
+    }
 
     & li {
       margin-right: 10px;
