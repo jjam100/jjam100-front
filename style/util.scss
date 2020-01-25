@@ -1,6 +1,20 @@
 @import './variables.scss';
 @import './normalize.scss';
 
+/*
+@media (max-width: $break1) {
+
+}
+
+@media (min-width: $break1 + 1px) and (max-width: $break2) {
+
+}
+
+@media (min-width: $break2 + 1px) {
+
+}
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -22,6 +36,20 @@ h4,
 h5,
 dt {
   font-family: $bold, sans-serif;
+}
+
+h2 {
+  @media (max-width: $break1) {
+    font-size: 2.13rem;
+  }
+
+  @media (min-width: $break1 + 1px) and (max-width: $break2) {
+    font-size: 2.33rem;
+  }
+
+  @media (min-width: $break2 + 1px) {
+    font-size: 3.33rem;
+  }
 }
 
 p,
@@ -88,5 +116,27 @@ a {
 
   @media (min-width: $break2 + 1px) {
     margin-bottom: 190px;
+  }
+}
+
+/* BUTTON */
+
+button {
+  outline: none;
+}
+
+input[type="submit"] {
+  outline: none;
+}
+
+/* List */
+ul.plain {}
+
+ul.no-disc {
+  list-style-type: none;
+  padding: 0px;
+
+  & li {
+    margin-bottom: 4px;
   }
 }
