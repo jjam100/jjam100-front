@@ -3,7 +3,7 @@ import './style/HashMyself.scss';
 const HashMyself = props => (
 	<section id="index-hash-myself" className={props.className}>
 		<h2>Hash myself</h2>
-		<table>
+		<table cellSpacing="0">
 			<thead>
 				<tr>
 					<th>key</th>
@@ -12,7 +12,10 @@ const HashMyself = props => (
 			</thead>
 			<tbody>
 				<tr>
-					<td>추구하는 가치</td>
+					<td>
+						추구하는 <br />
+						가치
+					</td>
 					<td>존중, 정직, 조화</td>
 				</tr>
 				<tr>
@@ -30,18 +33,22 @@ const HashMyself = props => (
 					<td>
 						<dl>
 							<dt>HTML + CSS + JS</dt>
+							<dd>★★★★☆</dd>
 							<dd>Fix된 디자인의 시안을 보고 Zeplin을 통해 퍼블리싱 할 수 있음</dd>
 						</dl>
 						<dl>
 							<dt>React(CRA, Next.js)</dt>
-							<dd>React와 Sass를 이용해, 컴포넌트 베이스의 재사용성 높은 개발을 할 수 있음</dd>
+							<dd>★★★☆☆</dd>
+							<dd>React와 Sass를 이용해, 컴포넌트 베이스의 재사용성 높은 개발 가능</dd>
 						</dl>
 						<dl>
 							<dt>Node.js(Express)</dt>
+							<dd>★★☆☆☆</dd>
 							<dd>Express를 이용하여 간단한 CRUD를 구현할 수 있음</dd>
 						</dl>
 						<dl>
 							<dt>Typescript</dt>
+							<dd>★☆☆☆☆</dd>
 							<dd>공부중 (Express와 접목하는 중)</dd>
 						</dl>
 					</td>
@@ -54,7 +61,7 @@ const HashMyself = props => (
 					<td>
 						<ul>
 							<li>VSCODE</li>
-							<li>Github</li>
+							<li>Github : 협업가능</li>
 						</ul>
 					</td>
 				</tr>
@@ -63,6 +70,7 @@ const HashMyself = props => (
 					<td>
 						<dl>
 							<dt>Adobe XD with Zeplin</dt>
+							<dd>★☆☆☆☆</dd>
 							<dd>
 								간단한 수준의 플랫디자인 보조, <br />
 								Zeplin 배포가능
@@ -70,6 +78,7 @@ const HashMyself = props => (
 						</dl>
 						<dl>
 							<dt>Adobe Illustration</dt>
+							<dd>★★☆☆☆</dd>
 							<dd>
 								디자인에 사용될 <br />
 								간단한 아이콘 제작 가능

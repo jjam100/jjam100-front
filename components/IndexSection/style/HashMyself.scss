@@ -1,1 +1,104 @@
 @import '../../../style/util.scss';
+
+$hash-thtd-paddingleft: 15px;
+$hash-line: 1.5px solid black;
+
+#index-hash-myself {
+  display: inline-block;
+  vertical-align: top;
+
+  @media (min-width: $break2 + 1px) {
+    margin-top: $spacing-3 + 372px;
+    margin-left: 90px;
+    width: calc(100% - 90px - #{$profile-pic-width-3});
+  }
+
+  & th {
+    font-size: 1rem;
+    padding: 5px 0px;
+    border-top: $hash-line;
+    border-bottom: $hash-line;
+    text-align: left;
+    padding-left: $hash-thtd-paddingleft;
+
+    &:first-child {
+
+      @media (max-width: $break1) {
+        width: $hash-thtd-paddingleft + 70px;
+      }
+
+      @media (min-width: $break1 + 1px) {
+        width: $hash-thtd-paddingleft + 102px;
+      }
+    }
+  }
+
+  & td {
+    padding: 12px $hash-thtd-paddingleft;
+    vertical-align: top;
+    border-bottom: $hash-line;
+
+    &:first-child {
+      @media (max-width: $break1) {
+        font-size: 1.13rem;
+      }
+
+      @media (min-width: $break1 + 1px) and (max-width: $break2) {
+        font-size: 1.33rem;
+      }
+
+      @media (min-width: $break2 + 1px) {
+        font-size: 1.86rem;
+      }
+    }
+
+    &:last-child,
+    &:last-child dt,
+    &:last-child dd {
+      letter-spacing: -1px;
+
+      @media (max-width: $break1) {
+        font-size: 1.13rem - 0.05rem;
+      }
+
+      @media (min-width: $break1 + 1px) and (max-width: $break2) {
+        font-size: 1.33rem - 0.05rem;
+      }
+
+      @media (min-width: $break2 + 1px) {
+        font-size: 1.86rem - 0.05rem;
+      }
+    }
+  }
+
+  & td dl {
+    margin: 0px 0px 15px 0px;
+
+    &:last-child {
+      margin: 0px;
+    }
+
+    dt {
+      margin-bottom: 6px;
+      letter-spacing: 0.005px;
+      font-weight: normal;
+    }
+
+    dd {
+      margin-left: 0px;
+      word-break: keep-all;
+      line-height: 1.13;
+      letter-spacing: 0.1px !important;
+    }
+  }
+
+  & td ul {
+    list-style-type: '- ';
+    padding: 0px 0px 0px 1rem;
+    margin: 0px;
+
+    & li {
+      letter-spacing: 0.2px;
+    }
+  }
+}
