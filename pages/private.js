@@ -1,8 +1,9 @@
 import { PrivateHeader } from '../components/Header';
+import { Container } from '../components/Container';
 const Private = () => (
-	<div>
+	<Container>
 		<PrivateHeader />
-	</div>
+	</Container>
 );
 
 export default Private;
