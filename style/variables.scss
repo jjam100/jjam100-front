@@ -1,17 +1,23 @@
-/* DISPLAY BREAKPOINTS */
+/* UTIL */
+
+// DISPLAY BREAKPOINTS
 $break1: 500px;
 $break2: 900px;
 // Mobile is 0 ~ 500px
 // Tablet is 500px ~ 900px
 // Laptop is 901px ~ 1920px
 
-/* FONTS */
+// FONTS
 $bold: "NIXGONB";
 $medium: "NIXGONM";
 $light: "NIXGONL";
 
-/* PAGE : INDEX */
+// SPACING
+$spacing-1: 100px;
+$spacing-2: 140px;
+$spacing-3: 190px;
 
+/* PAGE : INDEX */
 // Component : IndexHeader
 // $index-header-
 $index-header-h1-fontsize-1: 3.33rem;

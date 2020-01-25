@@ -36,6 +36,7 @@ h4,
 h5,
 dt {
   font-family: $bold, sans-serif;
+  margin-top: 0px;
 }
 
 h2 {
@@ -94,29 +95,29 @@ a {
 /* SPACING */
 .spacing-top {
   @media (max-width: $break1) {
-    margin-top: 100px;
+    margin-top: $spacing-1;
   }
 
   @media (min-width: $break1 + 1px) and (max-width: $break2) {
-    margin-top: 140px;
+    margin-top: $spacing-2;
   }
 
   @media (min-width: $break2 + 1px) {
-    margin-top: 190px;
+    margin-top: $spacing-3;
   }
 }
 
 .spacing-btm {
   @media (max-width: $break1) {
-    margin-bottom: 100px;
+    margin-bottom: $spacing-1;
   }
 
   @media (min-width: $break1 + 1px) and (max-width: $break2) {
-    margin-bottom: 140px;
+    margin-bottom: $spacing-2;
   }
 
   @media (min-width: $break2 + 1px) {
-    margin-bottom: 190px;
+    margin-bottom: $spacing-3;
   }
 }
 
