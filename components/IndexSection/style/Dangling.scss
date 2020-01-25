@@ -1,0 +1,26 @@
+@import '../../../style/util.scss';
+
+.cls-1 {
+  fill: #fff
+}
+
+.cls-1,
+.cls-2 {
+  stroke: #707070
+}
+
+.cls-2,
+.cls-5 {
+  fill: none
+}
+
+.cls-3 {
+  fill: #343434;
+  font-size: 22px;
+  font-family: $light, sans-serif;
+  letter-spacing: -.05em
+}
+
+.cls-4 {
+  stroke: none
+}
