@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,14 +27,39 @@ dt {
 p,
 li,
 dd,
-td {
+td,
+span {
   font-family: $light, sans-serif;
+
+  @media (max-width: $break1) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: $break1 + 1px) and (max-width: $break2) {
+    font-size: 1.33rem;
+  }
+
+  @media (min-width: $break2 + 1px) {
+    font-size: 1.46rem;
+  }
 }
 
 button,
 th,
 a {
   font-family: $medium, sans-serif;
+
+  @media (max-width: $break1) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: $break1 + 1px) and (max-width: $break2) {
+    font-size: 1.33rem;
+  }
+
+  @media (min-width: $break2 + 1px) {
+    font-size: 1.46rem;
+  }
 }
 
 /* SPACING */
