@@ -1,1 +1,39 @@
 @import '../../../style/util.scss';
+
+#index-header {
+  & h1 {
+
+    margin-top: 0px;
+    margin-bottom: 30px;
+    line-height: 1.07;
+
+    @media (max-width: $break1) {
+      font-size: 3.33rem;
+    }
+
+    @media (min-width: $break1 + 1px) and (max-width: $break2) {
+      font-size: 4.66rem;
+    }
+
+    @media (min-width: $break2 + 1px) {
+      font-size: 6.66rem;
+    }
+  }
+
+  & p {
+    text-transform: uppercase;
+    letter-spacing: -0.75px;
+
+    @media (max-width: $break1) {
+      font-size: 1.33rem;
+    }
+
+    @media (min-width: $break1 + 1px) and (max-width: $break2) {
+      font-size: 1.66rem;
+    }
+
+    @media (min-width: $break2 + 1px) {
+      font-size: 2rem;
+    }
+  }
+}
