@@ -4,36 +4,36 @@
   & h1 {
 
     margin-top: 0px;
-    margin-bottom: 30px;
-    line-height: 1.07;
+    margin-bottom: $index-header-h1-mb;
+    line-height: $index-header-h1-lineheight;
 
     @media (max-width: $break1) {
-      font-size: 3.33rem;
+      font-size: $index-header-h1-fontsize-1;
     }
 
     @media (min-width: $break1 + 1px) and (max-width: $break2) {
-      font-size: 4.66rem;
+      font-size: $index-header-h1-fontsize-2;
     }
 
     @media (min-width: $break2 + 1px) {
-      font-size: 6.66rem;
+      font-size: $index-header-h1-fontsize-3;
     }
   }
 
   & p {
     text-transform: uppercase;
-    letter-spacing: -0.75px;
+    letter-spacing: $index-header-p-letterspacing;
 
     @media (max-width: $break1) {
-      font-size: 1.33rem;
+      font-size: $index-header-p-fontsize-1;
     }
 
     @media (min-width: $break1 + 1px) and (max-width: $break2) {
-      font-size: 1.66rem;
+      font-size: $index-header-p-fontsize-2;
     }
 
     @media (min-width: $break2 + 1px) {
-      font-size: 2rem;
+      font-size: $index-header-p-fontsize-3;
     }
   }
 }
