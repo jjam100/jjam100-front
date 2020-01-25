@@ -20,7 +20,8 @@
 }
 
 html {
-  font-size: 13px;
+  font-size: $base-fontsize;
+  color: $black;
 }
 
 body {
