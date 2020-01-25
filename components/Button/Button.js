@@ -12,14 +12,14 @@ const Button = props => {
 	};
 
 	const def = (
-		<button id={att.id} className={att.className} onClick={att.onClick}>
+		<button id={att.id} className={'btn-white ' + att.className} onClick={att.onClick}>
 			{att.children}
 		</button>
 	);
 
 	const withLink = (
 		<Link href={att.link}>
-			<button id={att.id} className={att.className}>
+			<button id={att.id} className={'btn-white ' + att.className}>
 				{att.children}
 			</button>
 		</Link>
@@ -28,7 +28,7 @@ const Button = props => {
 	const withHref = (
 		<button
 			id={att.id}
-			className={att.className}
+			className={'btn-white ' + att.className}
 			onClick={e => {
 				location.href = att.href;
 			}}
