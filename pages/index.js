@@ -3,114 +3,14 @@ import './index.scss';
 import { DefaultLayout } from '../components/Layouts';
 import { IndexHeader } from '../components/Header';
 import { Button } from '../components/Button';
+import { Profile, HashMyself } from '../components/IndexSection';
 
 const Index = () => {
 	return (
 		<DefaultLayout>
 			<IndexHeader className="spacing-top" />
-			<section id="index-intro" className="spacing-top">
-				<img src="/images/main.png" srcSet="/images/main@2x.png 2x, /images/main@3x.png 3x" />
-				<h2>홍진백</h2>
-				<ul id="index-intro-list">
-					<li>서울과학기술대학교 컴퓨터공학과</li>
-					<li>서울시 광진구 거주</li>
-					<li>0년차 신입 프론트엔드 개발자</li>
-				</ul>
-				<ul id="index-intro-links">
-					<li>
-						<img src="/images/github.svg" />
-					</li>
-					<li>
-						<img src="/images/facebook.svg" />
-					</li>
-					<li>
-						<img src="/images/codepen.svg" />
-					</li>
-					<li>
-						<img src="/images/velog.png" srcSet="/images/velog@2x.png 2x, /images/velog@3x.png 3x" />
-					</li>
-				</ul>
-			</section>
-
-			<section id="index-hash-myself" className="spacing-top">
-				<h2>Hash myself</h2>
-				<table>
-					<thead>
-						<tr>
-							<th>key</th>
-							<th>value</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>추구하는 가치</td>
-							<td>존중, 정직, 조화</td>
-						</tr>
-						<tr>
-							<td>저는...</td>
-							<td>
-								팀간의 소통을 통해 <br />
-								만들어지는 시각적 결과물을 <br />
-								만드는데 재미를 느낍니다.
-							</td>
-						</tr>
-						<tr>
-							<td>
-								개발스택 <br />& 수준
-							</td>
-							<td>
-								<dl>
-									<dt>HTML + CSS + JS</dt>
-									<dd>Fix된 디자인의 시안을 보고 Zeplin을 통해 퍼블리싱 할 수 있음</dd>
-								</dl>
-								<dl>
-									<dt>React(CRA, Next.js)</dt>
-									<dd>React와 Sass를 이용해, 컴포넌트 베이스의 재사용성 높은 개발을 할 수 있음</dd>
-								</dl>
-								<dl>
-									<dt>Node.js(Express)</dt>
-									<dd>Express를 이용하여 간단한 CRUD를 구현할 수 있음</dd>
-								</dl>
-								<dl>
-									<dt>Typescript</dt>
-									<dd>공부중 (Express와 접목하는 중)</dd>
-								</dl>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								개발툴
-								<br />& etc
-							</td>
-							<td>
-								<ul>
-									<li>VSCODE</li>
-									<li>Github</li>
-								</ul>
-							</td>
-						</tr>
-						<tr>
-							<td>디자인</td>
-							<td>
-								<dl>
-									<dt>Adobe XD with Zeplin</dt>
-									<dd>
-										간단한 수준의 플랫디자인 보조, <br />
-										Zeplin 배포가능
-									</dd>
-								</dl>
-								<dl>
-									<dt>Adobe Illustration</dt>
-									<dd>
-										디자인에 사용될 <br />
-										간단한 아이콘 제작 가능
-									</dd>
-								</dl>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
+			<Profile className="spacing-top" />
+			<HashMyself className="spacing-top" />
 
 			<section id="index-works" className="spacing-top">
 				<h2>WORKS</h2>

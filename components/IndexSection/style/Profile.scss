@@ -1,0 +1,88 @@
+@import "../../../style/util.scss";
+
+#index-profile {
+
+  @media (max-width: $break1) {
+    width: 100%;
+
+    & ul#index-intro-links {
+      float: right;
+      margin: 10px 0px 0px 0px;
+    }
+  }
+
+  @media (min-width: $break1 + 1px) and (max-width: $break2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & ul#index-intro-links {
+      float: right;
+      margin: 20px 0px 0px 0px;
+    }
+  }
+
+  @media (min-width: $break2 + 1px) {
+    width: 305px
+  }
+
+  // Child Style  
+
+  img#profile-pic {
+    @media (max-width: $break1) {
+      width: 156px;
+      height: 156px;
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $break1 + 1px) and (max-width: $break2) {
+      width: 195px;
+      height: 195px;
+    }
+
+    @media (min-width: $break2 + 1px) {
+      width: 305px;
+      height: 305px;
+      margin-bottom: 70px;
+    }
+  }
+
+  h2 {
+    margin-top: 0px;
+  }
+
+  ul#index-intro-links {
+    list-style-type: none;
+    padding: 0px;
+
+    display: inline-flex;
+    flex-direction: row;
+
+    & li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      @media (max-width: $break1) {
+        width: 26px;
+        height: 26px;
+      }
+
+      @media (min-width: $break1 + 1px) and (max-width: $break2) {
+        width: 32px;
+        height: 32px;
+      }
+
+      @media (min-width: $break2 + 1px) {
+        width: 50px;
+        height: 50px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
