@@ -1,32 +1,29 @@
 @import '../../../style/util.scss';
 
-
-
 .btn-white {
-
-  border: solid 0.5px black;
+  border: solid 0.5px $black;
   background-color: white;
 
   &:hover {
-    background-color: black;
+    background-color: $black;
     color: white;
   }
 
   @media (max-width: $break1) {
-    padding: 8px 16px;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    padding: $btn-padding-1;
+    border-radius: $btn-bradius-1;
+    -webkit-border-radius: $btn-bradius-1;
+    -moz-border-radius: $btn-bradius-1;
+    -ms-border-radius: $btn-bradius-1;
+    -o-border-radius: $btn-bradius-1;
   }
 
   @media (min-width: $break1) {
-    padding: 15px 30px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    padding: $btn-padding-2;
+    border-radius: $btn-bradius-2;
+    -webkit-border-radius: $btn-bradius-2;
+    -moz-border-radius: $btn-bradius-2;
+    -ms-border-radius: $btn-bradius-2;
+    -o-border-radius: $btn-bradius-2;
   }
 }

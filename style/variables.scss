@@ -1,19 +1,32 @@
 /* UTIL */
 
-// DISPLAY BREAKPOINTS
+// DISPLAY BREAKPOINTS : Mobile ~ 500px ~ Tablet ~ 900 ~ Laptop(Desktop)
 $break1: 500px;
 $break2: 900px;
-// Mobile ~ 500px ~ Tablet ~ 900 ~ Laptop(Desktop)
 
 // FONTS
+$base-fontsize: 13px;
 $bold: "NIXGONB";
 $medium: "NIXGONM";
 $light: "NIXGONL";
 
+// COLOR
+$black: #343434;
+
 // SPACING
-$spacing-1: 100px;
+$spacing-1: 90px;
 $spacing-2: 140px;
 $spacing-3: 190px;
+
+/* UNIVERSAL COMPONENTS */
+/* Button */
+// Button: Button (Plain)
+$btn-padding-1: 8px 16px;
+$btn-bradius-1: 16px;
+$btn-padding-2: 11px 22px;
+$btn-bradius-2: 22px;
+
+
 
 /* PAGE : INDEX */
 // Component : IndexHeader
@@ -42,7 +55,7 @@ $profile-links-width-3: 50px;
 // Component : HashMyself
 $hash-ml: 90px;
 $hash-thtd-paddingleft: 15px;
-$hash-line: 1.5px solid black;
+$hash-line: 1.5px solid $black;
 $hash-1st-width-1: $hash-thtd-paddingleft+70px;
 $hash-1st-width-2: $hash-thtd-paddingleft+102px;
 $hash-td-fontsize-1: 1.13rem;
