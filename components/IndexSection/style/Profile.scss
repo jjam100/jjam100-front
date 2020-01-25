@@ -1,6 +1,7 @@
 @import "../../../style/util.scss";
 
 #index-profile {
+  display: inline-block;
 
   @media (max-width: $break1) {
     width: 100%;
@@ -13,27 +14,28 @@
   }
 
   @media (min-width: $break2 + 1px) {
-    width: 305px
+    width: $profile-pic-width-3;
   }
 
   // Child Style  
 
   img#profile-pic {
     @media (max-width: $break1) {
-      width: 156px;
-      height: 156px;
-      margin-bottom: 35px;
+      width: $profile-pic-width-1;
+      height: $profile-pic-width-1;
+      margin-bottom: $profile-pic-mb-1;
     }
 
     @media (min-width: $break1 + 1px) and (max-width: $break2) {
-      width: 195px;
-      height: 195px;
+      width: $profile-pic-width-2;
+      height: $profile-pic-width-2;
+      margin-bottom: $profile-pic-mb-2;
     }
 
     @media (min-width: $break2 + 1px) {
-      width: 305px;
-      height: 305px;
-      margin-bottom: 70px;
+      width: $profile-pic-width-3;
+      height: $profile-pic-width-3;
+      margin-bottom: $profile-pic-mb-3;
     }
   }
 
@@ -69,18 +71,18 @@
       }
 
       @media (max-width: $break1) {
-        width: 26px;
-        height: 26px;
+        width: $profile-links-width-1;
+        height: $profile-links-width-1;
       }
 
       @media (min-width: $break1 + 1px) and (max-width: $break2) {
-        width: 32px;
-        height: 32px;
+        width: $profile-links-width-2;
+        height: $profile-links-width-2;
       }
 
       @media (min-width: $break2 + 1px) {
-        width: 50px;
-        height: 50px;
+        width: $profile-links-width-3;
+        height: $profile-links-width-3;
       }
 
       img {
