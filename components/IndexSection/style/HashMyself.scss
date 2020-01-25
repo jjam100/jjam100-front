@@ -1,16 +1,13 @@
 @import '../../../style/util.scss';
 
-$hash-thtd-paddingleft: 15px;
-$hash-line: 1.5px solid black;
-
 #index-hash-myself {
   display: inline-block;
   vertical-align: top;
 
   @media (min-width: $break2 + 1px) {
-    margin-top: $spacing-3 + 372px;
-    margin-left: 90px;
-    width: calc(100% - 90px - #{$profile-pic-width-3});
+    margin-top: $spacing-3 + $profile-pic-width-3 + $profile-pic-mb-3;
+    margin-left: $hash-ml;
+    width: calc(100% - #{$hash-ml} - #{$profile-pic-width-3});
   }
 
   & th {
@@ -24,11 +21,11 @@ $hash-line: 1.5px solid black;
     &:first-child {
 
       @media (max-width: $break1) {
-        width: $hash-thtd-paddingleft + 70px;
+        width: $hash-1st-width-1;
       }
 
       @media (min-width: $break1 + 1px) {
-        width: $hash-thtd-paddingleft + 102px;
+        width: $hash-1st-width-2;
       }
     }
   }
@@ -40,15 +37,15 @@ $hash-line: 1.5px solid black;
 
     &:first-child {
       @media (max-width: $break1) {
-        font-size: 1.13rem;
+        font-size: $hash-td-fontsize-1;
       }
 
       @media (min-width: $break1 + 1px) and (max-width: $break2) {
-        font-size: 1.33rem;
+        font-size: $hash-td-fontsize-2;
       }
 
       @media (min-width: $break2 + 1px) {
-        font-size: 1.86rem;
+        font-size: $hash-td-fontsize-3;
       }
     }
 
@@ -56,30 +53,18 @@ $hash-line: 1.5px solid black;
     &:last-child dt,
     &:last-child dd {
       letter-spacing: -1px;
-
-      @media (max-width: $break1) {
-        font-size: 1.13rem - 0.05rem;
-      }
-
-      @media (min-width: $break1 + 1px) and (max-width: $break2) {
-        font-size: 1.33rem - 0.05rem;
-      }
-
-      @media (min-width: $break2 + 1px) {
-        font-size: 1.86rem - 0.05rem;
-      }
     }
   }
 
   & td dl {
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px $hash-dl-mb 0px;
 
     &:last-child {
       margin: 0px;
     }
 
     dt {
-      margin-bottom: 6px;
+      margin-bottom: $hash-dt-mb;
       letter-spacing: 0.005px;
       font-weight: normal;
     }
@@ -88,7 +73,7 @@ $hash-line: 1.5px solid black;
       margin-left: 0px;
       word-break: keep-all;
       line-height: 1.13;
-      letter-spacing: 0.1px !important;
+      letter-spacing: -1px !important;
     }
   }
 

@@ -19,7 +19,6 @@ $spacing-3: 190px;
 
 /* PAGE : INDEX */
 // Component : IndexHeader
-// $index-header-
 $index-header-h1-fontsize-1: 3.33rem;
 $index-header-h1-fontsize-2: 4.66rem;
 $index-header-h1-fontsize-3: 6.66rem;
@@ -32,7 +31,6 @@ $index-header-p-fontsize-3 : 2rem;
 $index-header-p-letterspacing: -0.75px;
 
 // Component : Profile
-// $profile-
 $profile-pic-width-1: 156px;
 $profile-pic-width-2: 195px;
 $profile-pic-width-3: 305px;
@@ -42,3 +40,15 @@ $profile-pic-mb-3: 70px;
 $profile-links-width-1: 26px;
 $profile-links-width-2: 32px;
 $profile-links-width-3: 50px;
+
+// Component : HashMyself
+$hash-ml: 90px;
+$hash-thtd-paddingleft: 15px;
+$hash-line: 1.5px solid black;
+$hash-1st-width-1: $hash-thtd-paddingleft+70px;
+$hash-1st-width-2: $hash-thtd-paddingleft+102px;
+$hash-td-fontsize-1: 1.13rem;
+$hash-td-fontsize-2: 1.33rem;
+$hash-td-fontsize-3: 1.86rem;
+$hash-dl-mb: 15px;
+$hash-dt-mb: 6px;
