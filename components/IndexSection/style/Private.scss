@@ -1,0 +1,16 @@
+@import '../../../style/util.scss';
+
+#index-private {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  button {
+    align-self: flex-end;
+    margin-top: auto;
+  }
+}
