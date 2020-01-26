@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "NIXGONB";
+  src: url("./NIXGONFONTSB20.eot");
+  /* IE9 Compat Modes */
+  src: url("./NIXGONFONTSB20.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("./NIXGONFONTSB20.otf") format("opentype"),
+    /* Open Type Font */
+    url("./NIXGONFONTSB20.svg") format("svg"),
+    /* Legacy iOS */
+    url("./NIXGONFONTSB20.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("./NIXGONFONTSB20.woff") format("woff"),
+    /* Modern Browsers */
+    url("./NIXGONFONTSB20.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NIXGONM";
+  src: url("./NIXGONFONTSM20.eot");
+  /* IE9 Compat Modes */
+  src: url("./NIXGONFONTSM20.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("./NIXGONFONTSM20.otf") format("opentype"),
+    /* Open Type Font */
+    url("./NIXGONFONTSM20.svg") format("svg"),
+    /* Legacy iOS */
+    url("./NIXGONFONTSM20.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("./NIXGONFONTSM20.woff") format("woff"),
+    /* Modern Browsers */
+    url("./NIXGONFONTSM20.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NIXGONL";
+  src: url("./NIXGONFONTSL20.eot");
+  /* IE9 Compat Modes */
+  src: url("./NIXGONFONTSL20.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("./NIXGONFONTSL20.otf") format("opentype"),
+    /* Open Type Font */
+    url("./NIXGONFONTSL20.svg") format("svg"),
+    /* Legacy iOS */
+    url("./NIXGONFONTSL20.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("./NIXGONFONTSL20.woff") format("woff"),
+    /* Modern Browsers */
+    url("./NIXGONFONTSL20.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: bold;
+  font-style: normal;
+}
