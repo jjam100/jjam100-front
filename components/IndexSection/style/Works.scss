@@ -7,15 +7,15 @@
 
   h3 {
     @media (max-width: $break1) {
-      font-size: 1.5rem;
+      font-size: $works-h3-fontsize-1;
     }
 
     @media (min-width: $break1 + 1px) and (max-width: $break2) {
-      font-size: 1.66rem;
+      font-size: $works-h3-fontsize-2;
     }
 
     @media (min-width: $break2 + 1px) {
-      font-size: 1.86rem;
+      font-size: $works-h3-fontsize-3;
     }
   }
 }
@@ -26,28 +26,28 @@
   flex-wrap: nowrap;
 
   @media (max-width: $break2) {
-    margin-bottom: 25px;
+    margin-bottom: $works-item-spacing-1;
   }
 
   @media (min-width: $break2 + 1px) {
-    margin-bottom: 40px;
+    margin-bottom: $works-item-spacing-2;
   }
 }
 
 .works-img-wrapper {
   @media (max-width: $break1) {
-    width: 125px;
-    height: 200px;
+    width: $work-img-width-1;
+    height: $work-img-width-1 * $work-img-wh-ratio;
   }
 
   @media (min-width: $break1 + 1px) and (max-width: $break2) {
-    width: 200px;
-    height: 330px;
+    width: $work-img-width-2;
+    height: $work-img-width-2 * $work-img-wh-ratio;
   }
 
   @media (min-width: $break2 + 1px) {
-    width: 233px;
-    height: 381px;
+    width: $work-img-width-3;
+    height: $work-img-width-3 * $work-img-wh-ratio;
   }
 
   & img {
@@ -60,19 +60,19 @@
   flex-direction: column;
 
   @media (max-width: $break1) {
-    margin-left: 10px;
-    width: calc(100% - 10px - 125px);
+    margin-left: $work-internal-spacing-1;
+    width: calc(100% - #{$work-internal-spacing-1} - #{$work-img-width-1});
   }
 
   @media (min-width: $break1 + 1px) and (max-width: $break2) {
-    margin-left: 36px;
-    width: calc(100% - 36px - 200px);
+    margin-left: $work-internal-spacing-2;
+    width: calc(100% - #{$work-internal-spacing-2} - #{$work-img-width-1});
   }
 
   @media (min-width: $break2 + 1px) {
-    margin-left: 66px;
+    margin-left: $work-internal-spacing-3;
     // width: calc(100% - 66px - 233px);
-    width: 320px;
+    width: $work-desktop-textwrapper-width;
   }
 
   ul {
@@ -86,15 +86,15 @@
     letter-spacing: -0.8px;
 
     @media (max-width: $break1) {
-      font-size: 1.06rem;
+      font-size: $work-plaintext-fontsize-1;
     }
 
     @media (min-width: $break1 + 1px) and (max-width: $break2) {
-      font-size: 1.2rem;
+      font-size: $work-plaintext-fontsize-2;
     }
 
     @media (min-width: $break2 + 1px) {
-      font-size: 1.46rem;
+      font-size: $work-plaintext-fontsize-3;
     }
   }
 
