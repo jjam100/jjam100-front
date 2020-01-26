@@ -1,6 +1,13 @@
 @import '../../../style/util.scss';
 
 section#index-contact {
+
+  @media (min-width: $break2 + 1px) {
+    display: inline-block;
+    width: calc(50% - 25px);
+    margin-right: 50px;
+  }
+
   & .contact-item-wrapper {
     display: flex;
     flex-direction: row;
