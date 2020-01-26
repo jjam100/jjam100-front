@@ -4,6 +4,7 @@ import { DefaultLayout } from '../components/Layouts';
 import { IndexHeader } from '../components/Header';
 import { Button } from '../components/Button';
 import { Profile, HashMyself, Works, Contact } from '../components/IndexSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
 	return (
@@ -26,6 +27,7 @@ const Index = () => {
 					<a>들어가기</a>
 				</Link>
 			</section>
+			<Footer />
 		</DefaultLayout>
 	);
 };
