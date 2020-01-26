@@ -1,0 +1,25 @@
+@import '../../../style/util.scss';
+
+section#index-contact {
+  & .contact-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    & :last-child {
+      margin-bottom: 0px;
+    }
+
+    button {
+      @media (max-width: $break1) {
+        width: 84px;
+      }
+
+      @media (min-width: $break1 + 1px) {
+        width: 126px;
+      }
+    }
+  }
+}
