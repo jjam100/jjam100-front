@@ -2,17 +2,9 @@
 @import './normalize.scss';
 
 /*
-@media (max-width: $break1) {
-
-}
-
-@media (min-width: $break1 + 1px) and (max-width: $break2) {
-
-}
-
-@media (min-width: $break2 + 1px) {
-
-}
+@media (max-width: $break1) {}
+@media (min-width: $break1 + 1px) and (max-width: $break2) {}
+@media (min-width: $break2 + 1px) {}
 */
 
 * {
@@ -126,10 +118,12 @@ a {
 
 button {
   outline: none;
+  cursor: pointer;
 }
 
 input[type="submit"] {
   outline: none;
+  cursor: pointer;
 }
 
 /* List */
