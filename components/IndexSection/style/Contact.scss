@@ -5,7 +5,9 @@ section#index-contact {
   @media (min-width: $break2 + 1px) {
     display: inline-block;
     width: calc(50% - 25px);
-    margin-right: 50px;
+    padding-right: 25px;
+    border-right: 0.5px solid $black;
+    margin-right: 25px;
   }
 
   & .contact-item-wrapper {
